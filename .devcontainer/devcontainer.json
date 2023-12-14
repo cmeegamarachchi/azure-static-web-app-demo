@@ -1,0 +1,4 @@
+{
+	"name": "Azure static web app",
+	"dockerFile": "Dockerfile"
+}
