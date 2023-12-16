@@ -23,10 +23,9 @@ app.http('most_wanted_list', {
 
 				const data = await response.json();
 
-				console.dir(data.data);
-
 				return {
-					body: data.data
+					status: 200,
+					body: data
 				};
 			} else {
 				console.error(response.status);
