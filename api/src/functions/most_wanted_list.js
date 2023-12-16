@@ -4,8 +4,6 @@ app.http('most_wanted_list', {
 	methods: ['GET'],
 	authLevel: 'anonymous',
 	handler: async (request, context) => {
-		context.log(`Requesting data from api`);
-
 		try {
 
 			const url = new URL(process.env.URL_MOST_WANTED_LIST);
@@ -18,9 +16,6 @@ app.http('most_wanted_list', {
 			});
 
 			if (response.ok) {
-
-				console.log(`data receieved okay`);
-
 				const data = await response.json();
 
 				return {
