@@ -1,4 +1,9 @@
 {
 	"name": "Azure static web app",
-	"dockerFile": "Dockerfile"
+	"dockerFile": "Dockerfile",
+	"customizations": {
+		"vscode": {
+			"extensions": [		"ms-azuretools.vscode-azurefunctions", "ms-azuretools.vscode-azurestaticwebapps",]
+		}
+	}	
 }
