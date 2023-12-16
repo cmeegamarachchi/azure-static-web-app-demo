@@ -27,8 +27,7 @@ app.http('most_wanted_list', {
 				console.dir(data.data);
 
 				return {
-					status: 200,
-					body: data.data,
+					body: data.data
 				};
 			} else {
 				console.error(response.status);
