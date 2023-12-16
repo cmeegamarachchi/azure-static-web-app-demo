@@ -19,13 +19,13 @@ app.http('most_wanted_list', {
 
 			if (response.ok) {
 
-				console.log(`data receieved okay v2`);
+				console.log(`data receieved okay`);
 
 				const data = await response.json();
 
 				return {
 					status: 200,
-					body: data
+					body: JSON.stringify(data, null, 2)
 				};
 			} else {
 				console.error(response.status);
